@@ -9,3 +9,9 @@ class Solution:
             keep[i] = 'random'
             
         return False
+
+class Solution:
+    # https://neetcode.io/problems/duplicate-integer/question
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        if len(nums) == 0: return False
+        return len(set(nums)) != len(nums)
